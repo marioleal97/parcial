@@ -2,7 +2,6 @@ int pinSerial = 2;
 int prclk = 3;
 int pSclk= 4;
 int state=0;
-
 int ver[]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 int A[]={1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,0};
 int B[]={0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0};
@@ -12,10 +11,25 @@ int E[]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
 int F[]={0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 int G[]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0};
 int H[]={1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1};
-
+int I[]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+int J[]={0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,1,1,0,1,1,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1}; 
+int K[]={1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,0,1,1,0,0,1,1,1,0,1,1,1,0,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1};
+int L[]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1};
+int M[]={1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,1,1,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,0,1,1};
+int N[]={1,1,0,0,0,0,1,1,1,1,1,0,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,1,1};
+int O[]={0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0};
+int P[]={0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,1,0,0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1};
+int Q[]={1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,1,1,1,1,0,0,1,1,1,1,0,1,1,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0};
+int R[]={1,1,0,0,0,0,1,1,0,1,1,0,0,0,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1};
+int S[]={1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,1,1,0,0,1,1,1,0,0,0,0,1,0,1,1,1,1,1,1,1,0,0,1,1,1,1,1,0};
+int T[]={0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+int U[]={0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1,1,1,1,0,0,1,1,1};
+int V[]={0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1};
+int W[]={1,1,0,0,0,0,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1};
+int X[]={1,1,0,0,0,0,1,1,1,1,1,0,0,1,1,1,0,1,1,1,1,1,1,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,1,0,0,1,1,1,1,1,0,0,0,0,1,1};
+int Y[]={0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1,1,1,1,1,1,0,1,1,1,0,0,1,1,1,1,1,0,0,0,0,1,1};
+int Z[]={1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
 int cinco[]={0,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
-
-
 
 void setup()
 {  
@@ -25,21 +39,19 @@ void setup()
   Serial.begin(9600);
   
 }
-
-
 //-------------------------------------------
 void loop()
 {
- 
-  
+  //caracter2(cinco);
+   
   while(state==0)
   {
     state=1;
-    Serial.print("Que desea realizar :\n");
-    Serial.print("1) verificar funioncionamiento de los leds \n2) Ingresar patron por serial \n 3) Mostrar Secuencia de patrones a cierto tiempo\n");
+    Serial.println("Queln desea realizar :\n");
+    Serial.println("1) verificar funioncionamiento de los leds \n2) Ingresar patron por serial \n 3) Mostrar Secuencia de patrones a cierto tiempo\n");
     
     while(state==1)
-    {
+     {
       if(Serial.available()>0)
       {
         char opc;
@@ -70,26 +82,20 @@ void loop()
      }
      while(state==2)
      {
-       Serial.print("\nVerificacion de los leds\n");
+       Serial.println("\nVerificacion de los leds\n");
        verificacion(ver);
        state=0;
      }
     while(state==3)
      {
-        Serial.print("\nIngrese el patron a observar segun el manual: \n");
+        Serial.println("\nIngrese el patron a observar segun el manual: \n");
         state=5;
         String bits;
+      	bool ban=false;
         while(state==5)
         {
 
-          if(Serial.available()>0)
-          {
-            while(Serial.available()>0)
-            {
-              bits+=(char)Serial.read();
-            }
-          }
-
+         ban=recepcion(bits);
           if(bits.length()>=64)
           {
             state=3;
@@ -102,54 +108,36 @@ void loop()
      }
     while(state==4)
      {
-        Serial.print("\nIngrese los caracteres que desea observar\n");
+        Serial.println("\nIngrese los caracteres que desea observar\n");
         state=6;
         bool datafull=false;
-        String cantidad="";
         String secuencia="";
         String tiempoD="";
                      
          while(state==6)
         {
-          
-          if(Serial.available()>0)
-          {
-            while(Serial.available()>0)
-            {
-              secuencia+= (char) Serial.read();
-           
-            }
-           
-           datafull=true;
-          
-           }
+
+           datafull=recepcion(secuencia);
            if(datafull==true)
            {
              state=4;
            }
-           delay(1000);
+           delay(500);
         }
         Serial.println("\nIngrese el tiempo (milesegundos) entre cada patron\n");
         state=7;
         datafull=false;
          while(state==7)
         {
-          if(Serial.available()>0)
-          {
-            while(Serial.available()>0)
-            {
-              tiempoD+=(char)Serial.read();
-            }
-           datafull=true;
-           
-         }
+    
+           datafull=recepcion(tiempoD);
             if(datafull==true)
            {
              state=4;
            }
-           delay(1000);
+           delay(500);
         }
-           
+        
 	   publik(secuencia,tiempoD);
        state=0;
 		}
@@ -184,7 +172,7 @@ void publik(String secuencia,String tiempo)
 //------------------------------------------- 
 void caracter2(int car1[])
 {
-  Serial.print("Funcion caracter2\n");
+  Serial.println("Desplegando caracter en matriz\n");
   int j=0;
   for(int i=0;i<64;i++)
   { 
@@ -193,6 +181,24 @@ void caracter2(int car1[])
     if(j==8){j=0;RCLK();}
   }
 }
+//-------------------------------------------
+bool recepcion(String &secuencia)
+{
+  bool bandera=false;
+   if(Serial.available()>0)
+          {
+            while(Serial.available()>0)
+            {
+              secuencia+= (char) Serial.read();
+           
+            }
+           
+           bandera=true;
+        
+           }
+  return bandera;
+  
+}
 
 //-------------------------------------------
 void verificacion(int ver[]){
@@ -200,43 +206,46 @@ void verificacion(int ver[]){
 }
 void findVector(char nombre)
 {
-  
   int *ptr;
-  
-  if(nombre=='a'|| nombre=='A')
+  if(nombre=='a' || nombre=='A')
   {
     ptr=&A[0];
-    
   }
   else if(nombre=='b' || nombre=='B')
   {
-   ptr=&B[0];
+    ptr=&B[0];
   }
-   else if(nombre=='c' || nombre=='C')
+  else if(nombre=='c' || nombre=='C')
   {
-   ptr=&C[0];
+    ptr=&C[0];
   }
    else if(nombre=='d' || nombre=='D')
   {
-   ptr=&D[0];
+    ptr=&D[0];
   }
-   else if(nombre=='e' || nombre=='E')
+  else if(nombre=='e' || nombre=='E')
   {
-   ptr=&D[0];
+    ptr=&E[0];
   }
   else if(nombre=='f' || nombre=='F')
   {
-   ptr=&D[0];
+    ptr=&F[0];
   }
   else if(nombre=='g' || nombre=='G')
   {
-   ptr=&D[0];
+    ptr=&G[0];
   }
   else if(nombre=='h' || nombre=='H')
   {
-   ptr=&D[0];
+    ptr=&H[0];
   }
- caracter2(ptr);
+   else if(nombre=='i' || nombre=='I')
+  {
+    ptr=&I[0];
+  }
+   
+ 
+  caracter2(ptr);
 }
 //-------------------------------------------------
 //FUNCION PARA ENVIAR DATOS A SCLK
