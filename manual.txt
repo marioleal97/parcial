@@ -1,0 +1,6 @@
+Manual
+1.El usuario deberá elegir una de las tres opciones del menú, escribiendo su respectivo numeral.
+2.En caso de que sea el NUMERAL 1, se iluminaran todos los leds que conforman la matriz de 8X8 y el usuario podrá observarlos.
+3.En caso de que sea el NUMERAL 2, el programa le pedirá ingresar el patrón que desea ver, para hacer esto tendrá que escribir en forma de bits el carácter que desea observar que deberá de contener en total 64 unos (1), o ceros (0).
+4.En caso de que sea el NUMERAL 3, el programa le pedirá ingresar el carácter alfabético que desea observar en la matriz, y acto seguido se le pedirá ingresar el tiempo que desea que pase entre que ve un carácter y el siguiente.
+5.Al final de cada numeral una vez que se haya terminado de ejecutar volverá a aparecer el menú en el que podrá realizar la siguiente acción que desee.
